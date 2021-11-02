@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="title">
+        <h1>Exercício - Lógica de programação II</h1>
+        <p>Esta é uma página de exercícios focados no uso de formas feitas somente com a tag Canvas e JavaScript.</p>
+    </div>
+    
+    <canvas class="screenFlag" width="800" height="600"></canvas>
+    
+    <script>
+
+        //var tela = document.querySelector('canvas');
+        var flag = document.querySelector('.screenFlag');
+        var pen = flag.getContext('2d');
+
+        pen.fillStyle = 'LightSlateGray';
+        pen.fillRect(0, 0, 800, 600);
+
+        pen.fillStyle = 'LightGreen';
+        pen.fillRect(0, 0, 200, 600);
+
+        pen.fillStyle = 'LightCoral';
+        pen.fillRect(600, 0, 800, 600);
+
+        pen.fillStyle = 'Khaki';
+        pen.beginPath();
+        pen.moveTo(400, 300);
+        pen.lineTo(600, 600);
+        pen.lineTo(200, 600);
+        pen.lineTo(400, 300);
+        pen.lineTo(200, 0);
+        pen.lineTo(600, 0);
+        pen.fill();
+
+        pen.fillStyle = 'DarkSlateBlue';
+        pen.beginPath();
+        pen.arc(400, 300, 150, 0, 6.28);
+        pen.fill();
+
+
+    </script>
+
+    <canvas class="creeper" width="600" height="400"></canvas>
+
+    <script>
+        var creeper = document.querySelector('.creeper');
+        var pen = creeper.getContext('2d');
+
+        pen.fillStyle = 'DarkGreen';
+        pen.fillRect(125, 50, 350, 300);
+
+        pen.fillStyle = 'Black';
+        pen.fillRect(175, 110, 90, 90);
+        pen.fillRect(335, 110, 90, 90);
+        pen.fillRect(265, 200, 70, 100);
+        pen.fillRect(225, 240, 40, 110);
+        pen.fillRect(335, 240, 40, 110);
+    </script>
+
+    <canvas class="square" width="600" height="600"></canvas>
+
+    <script>
+        var square = document.querySelector('.square');
+        var pen = square.getContext('2d');
+
+        pen.fillStyle = '#000';
+        pen.beginPath();
+        pen.moveTo(100, 100);
+        pen.lineTo(500, 500);
+        pen.lineTo(100, 500);
+        pen.fill();
+
+        pen.fillStyle = '#bbb';
+        pen.beginPath();
+        pen.moveTo(150, 225);
+        pen.lineTo(375, 450);
+        pen.lineTo(150, 450);
+        pen.fill();
+
+
+    </script>
+
+    <canvas class="brazilFlag" width="600" height="400"></canvas>
+
+    <script>
+        var brFlag = document.querySelector('.brazilFlag');
+        var pen = brFlag.getContext('2d')
+
+        pen.fillStyle = 'green';
+        pen.fillRect(0, 0, 600, 400);
+
+        pen.fillStyle = 'yellow';
+        pen.moveTo(300, 50);
+        pen.lineTo(575, 200);
+        pen.lineTo(300, 350);
+        pen.lineTo(25, 200);
+        pen.fill();
+
+        pen.fillStyle = 'blue';
+        pen.beginPath();
+        pen.arc(300, 200, 100, 0, 2 * 3.14);
+        pen.fill();
+    </script>
+
+
+</body>
+</html>

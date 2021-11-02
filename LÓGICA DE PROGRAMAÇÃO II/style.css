@@ -1,0 +1,39 @@
+body{
+    background-color: #333;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightgray;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.screenFlag {
+    margin-left: calc(50% - 400px);
+    margin-top: 100px;
+}
+
+.creeper {
+    background-color: #555;
+    border: 5px solid black;
+    margin-left: calc(50% - 305px);
+    margin-top: 100px;
+
+}
+
+.square {
+    background-color: #bbb;
+    border: 5px solid black;
+    margin-left: calc(50% - 305px);
+    margin-top: 100px;
+}
+
+.brazilFlag {
+    border: 5px solid black;
+    margin-left: calc(50% - 305px);
+    margin-top: 100px;
+}
